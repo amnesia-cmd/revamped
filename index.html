@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harbor Shield — Protection That Moves With You</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <nav class="nav" id="nav">
+    <a href="#" class="nav__brand">
+      <svg class="nav__logo" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+        <path d="M16 2L4 8v10c0 7.2 5.1 13.9 12 15 6.9-1.1 12-7.8 12-15V8L16 2z" stroke="currentColor" stroke-width="1.5"/>
+        <path d="M12 16l3 3 6-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+      Harbor Shield
+    </a>
+    <ul class="nav__links">
+      <li><a href="#coverage">Coverage</a></li>
+      <li><a href="#quote">Get Quote</a></li>
+      <li><a href="#plans">Plans</a></li>
+      <li><a href="#stories">Stories</a></li>
+    </ul>
+    <button class="nav__cta" data-scroll="#quote">Start Free Quote</button>
+    <button class="nav__menu" id="menuToggle" aria-label="Open menu">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-drawer" id="mobileDrawer">
+    <a href="#coverage">Coverage</a>
+    <a href="#quote">Get Quote</a>
+    <a href="#plans">Plans</a>
+    <a href="#stories">Stories</a>
+    <button data-scroll="#quote">Start Free Quote</button>
+  </div>
+
+  <header class="hero">
+    <div class="hero__content">
+      <p class="hero__eyebrow reveal">Trusted by 240,000+ families</p>
+      <h1 class="hero__title reveal">
+        Insurance built for<br>
+        <em>life's turning points</em>
+      </h1>
+      <p class="hero__desc reveal">
+        Clear coverage. Honest pricing. A team that answers in minutes—not days.
+        Protect what matters without the fine-print maze.
+      </p>
+      <div class="hero__actions reveal">
+        <button class="btn btn--primary" data-scroll="#quote">
+          Calculate My Rate
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3 9h12M9 3l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+        <button class="btn btn--ghost" data-scroll="#plans">Compare Plans</button>
+      </div>
+      <div class="hero__trust reveal">
+        <div class="trust-badge">
+          <span class="trust-badge__score">4.9</span>
+          <span class="trust-badge__label">Customer rating</span>
+        </div>
+        <div class="trust-badge">
+          <span class="trust-badge__score">$2.1B</span>
+          <span class="trust-badge__label">Claims paid (2025)</span>
+        </div>
+        <div class="trust-badge">
+          <span class="trust-badge__score">24/7</span>
+          <span class="trust-badge__label">Live support</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__visual reveal">
+      <div class="shield-card">
+        <div class="shield-card__ring"></div>
+        <svg class="shield-card__icon" viewBox="0 0 120 140" fill="none">
+          <path d="M60 8L12 28v44c0 36 20.4 69.6 48 80 27.6-10.4 48-44 48-80V28L60 8z" fill="url(#shieldGrad)" stroke="rgba(255,255,255,0.2)" stroke-width="1"/>
+          <path d="M42 68l14 14 28-28" stroke="#faf7f2" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+          <defs>
+            <linearGradient id="shieldGrad" x1="12" y1="8" x2="108" y2="152">
+              <stop stop-color="#3d8b7a"/>
+              <stop offset="1" stop-color="#1a4a42"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <div class="shield-card__float shield-card__float--1">
+          <span>Life</span>
+        </div>
+        <div class="shield-card__float shield-card__float--2">
+          <span>Health</span>
+        </div>
+        <div class="shield-card__float shield-card__float--3">
+          <span>Home</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="stats" id="coverage">
+    <div class="stats__grid">
+      <div class="stat reveal">
+        <span class="stat__num" data-target="98">0</span><span class="stat__suffix">%</span>
+        <span class="stat__label">Claims approved first pass</span>
+      </div>
+      <div class="stat reveal">
+        <span class="stat__num" data-target="12">0</span><span class="stat__suffix">min</span>
+        <span class="stat__label">Average quote time</span>
+      </div>
+      <div class="stat reveal">
+        <span class="stat__num" data-target="47">0</span><span class="stat__suffix">states</span>
+        <span class="stat__label">Nationwide coverage</span>
+      </div>
+      <div class="stat reveal">
+        <span class="stat__num" data-target="15">0</span><span class="stat__suffix">yr</span>
+        <span class="stat__label">Industry experience</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="quote" id="quote">
+    <div class="section-head reveal">
+      <span class="section-head__tag">Interactive Quote</span>
+      <h2>See your rate in real time</h2>
+      <p>Adjust the sliders below—your estimated premium updates instantly.</p>
+    </div>
+
+    <div class="quote__panel reveal">
+      <div class="quote__controls">
+        <div class="quote__tabs" role="tablist">
+          <button class="quote__tab active" data-type="life" role="tab">Life</button>
+          <button class="quote__tab" data-type="health" role="tab">Health</button>
+          <button class="quote__tab" data-type="auto" role="tab">Auto</button>
+          <button class="quote__tab" data-type="home" role="tab">Home</button>
+        </div>
+
+        <div class="slider-group">
+          <label for="ageSlider">
+            <span>Your age</span>
+            <strong id="ageValue">35</strong>
+          </label>
+          <input type="range" id="ageSlider" min="18" max="75" value="35">
+        </div>
+
+        <div class="slider-group">
+          <label for="coverageSlider">
+            <span>Coverage amount</span>
+            <strong id="coverageValue">$500,000</strong>
+          </label>
+          <input type="range" id="coverageSlider" min="1" max="10" value="3">
+        </div>
+
+        <div class="toggle-group">
+          <span>Include family riders</span>
+          <button class="toggle" id="familyToggle" aria-pressed="false">
+            <span class="toggle__knob"></span>
+          </button>
+        </div>
+      </div>
+
+      <div class="quote__result">
+        <p class="quote__result-label">Estimated monthly premium</p>
+        <div class="quote__price">
+          <span class="quote__currency">$</span>
+          <span class="quote__amount" id="premiumAmount">42</span>
+          <span class="quote__period">/mo</span>
+        </div>
+        <p class="quote__note" id="premiumNote">Based on Life · $500K coverage · age 35</p>
+        <ul class="quote__features" id="quoteFeatures">
+          <li>Instant digital policy delivery</li>
+          <li>No medical exam for most applicants</li>
+          <li>Cancel anytime, no hidden fees</li>
+        </ul>
+        <button class="btn btn--primary btn--full">Continue Application</button>
+        <p class="quote__disclaimer">Estimate only. Final rate subject to underwriting.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="plans" id="plans">
+    <div class="section-head reveal">
+      <span class="section-head__tag">Plans</span>
+      <h2>Coverage that fits your chapter</h2>
+      <p>Hover a card to explore what's included.</p>
+    </div>
+
+    <div class="plans__grid">
+      <article class="plan-card reveal" data-plan="essential">
+        <div class="plan-card__front">
+          <span class="plan-card__tier">Essential</span>
+          <h3>Core Protection</h3>
+          <p class="plan-card__price">From <strong>$29</strong>/mo</p>
+          <ul class="plan-card__highlights">
+            <li>Basic life & health</li>
+            <li>$250K max coverage</li>
+            <li>Email support</li>
+          </ul>
+        </div>
+        <div class="plan-card__back">
+          <h4>What's included</h4>
+          <ul>
+            <li>Term life up to 20 years</li>
+            <li>Preventive health visits</li>
+            <li>Digital claims portal</li>
+            <li>Annual policy review</li>
+          </ul>
+          <button class="btn btn--ghost btn--sm">Select Essential</button>
+        </div>
+      </article>
+
+      <article class="plan-card plan-card--featured reveal" data-plan="complete">
+        <div class="plan-card__badge">Most Popular</div>
+        <div class="plan-card__front">
+          <span class="plan-card__tier">Complete</span>
+          <h3>Full Spectrum</h3>
+          <p class="plan-card__price">From <strong>$58</strong>/mo</p>
+          <ul class="plan-card__highlights">
+            <li>Life, health & home</li>
+            <li>$1M max coverage</li>
+            <li>24/7 phone support</li>
+          </ul>
+        </div>
+        <div class="plan-card__back">
+          <h4>What's included</h4>
+          <ul>
+            <li>Everything in Essential</li>
+            <li>Home & auto bundles</li>
+            <li>Family rider options</li>
+            <li>Priority claims processing</li>
+          </ul>
+          <button class="btn btn--primary btn--sm">Select Complete</button>
+        </div>
+      </article>
+
+      <article class="plan-card reveal" data-plan="legacy">
+        <div class="plan-card__front">
+          <span class="plan-card__tier">Legacy</span>
+          <h3>Generational</h3>
+          <p class="plan-card__price">From <strong>$112</strong>/mo</p>
+          <ul class="plan-card__highlights">
+            <li>Whole life + investments</li>
+            <li>Unlimited riders</li>
+            <li>Dedicated advisor</li>
+          </ul>
+        </div>
+        <div class="plan-card__back">
+          <h4>What's included</h4>
+          <ul>
+            <li>Permanent life policies</li>
+            <li>Estate planning tools</li>
+            <li>Wealth transfer guidance</li>
+            <li>White-glove onboarding</li>
+          </ul>
+          <button class="btn btn--ghost btn--sm">Select Legacy</button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="steps">
+    <div class="section-head reveal">
+      <span class="section-head__tag">How It Works</span>
+      <h2>Protected in three simple steps</h2>
+    </div>
+    <div class="steps__track">
+      <div class="step reveal" data-step="1">
+        <div class="step__num">01</div>
+        <h3>Answer a few questions</h3>
+        <p>Our smart form adapts to your situation—no endless paperwork.</p>
+      </div>
+      <div class="step reveal" data-step="2">
+        <div class="step__num">02</div>
+        <h3>Compare tailored options</h3>
+        <p>See transparent pricing side-by-side with clear explanations.</p>
+      </div>
+      <div class="step reveal" data-step="3">
+        <div class="step__num">03</div>
+        <h3>Activate instantly</h3>
+        <p>Sign digitally and receive your policy within minutes.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials" id="stories">
+    <div class="section-head reveal">
+      <span class="section-head__tag">Stories</span>
+      <h2>Real families. Real peace of mind.</h2>
+    </div>
+
+    <div class="testimonial-slider reveal">
+      <div class="testimonial-slider__track" id="testimonialTrack">
+        <blockquote class="testimonial active">
+          <p>"When my husband needed surgery, Harbor Shield approved our claim in 48 hours. No fighting, no surprises."</p>
+          <footer>
+            <strong>Maria Chen</strong>
+            <span>Complete Plan · Portland, OR</span>
+          </footer>
+        </blockquote>
+        <blockquote class="testimonial">
+          <p>"I switched from a big insurer and saved $340/month while getting better coverage. The quote tool sold me in seconds."</p>
+          <footer>
+            <strong>James Okonkwo</strong>
+            <span>Essential Plan · Atlanta, GA</span>
+          </footer>
+        </blockquote>
+        <blockquote class="testimonial">
+          <p>"Our advisor helped us set up a legacy plan for our kids. It felt personal—not like a call center script."</p>
+          <footer>
+            <strong>Patricia &amp; Robert Walsh</strong>
+            <span>Legacy Plan · Boston, MA</span>
+          </footer>
+        </blockquote>
+      </div>
+      <div class="testimonial-slider__controls">
+        <button class="slider-btn" id="prevTestimonial" aria-label="Previous">←</button>
+        <div class="slider-dots" id="sliderDots"></div>
+        <button class="slider-btn" id="nextTestimonial" aria-label="Next">→</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq">
+    <div class="section-head reveal">
+      <span class="section-head__tag">FAQ</span>
+      <h2>Questions, answered plainly</h2>
+    </div>
+    <div class="faq__list reveal">
+      <details class="faq__item" open>
+        <summary>How fast can I get covered?</summary>
+        <p>Most applicants receive a decision within 15 minutes. Digital policies are delivered the same day for approved applications.</p>
+      </details>
+      <details class="faq__item">
+        <summary>Can I bundle multiple policies?</summary>
+        <p>Yes. Complete and Legacy plans include bundle discounts up to 25% when you combine life, health, home, or auto coverage.</p>
+      </details>
+      <details class="faq__item">
+        <summary>What if I need to file a claim?</summary>
+        <p>File online or call our 24/7 line. Average first response is under 4 hours, with most claims resolved within 5 business days.</p>
+      </details>
+      <details class="faq__item">
+        <summary>Is there a cancellation fee?</summary>
+        <p>No. Cancel anytime with prorated refunds on unused premium. We believe trust shouldn't come with lock-in penalties.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="cta-banner reveal">
+    <div class="cta-banner__inner">
+      <h2>Ready to protect what you've built?</h2>
+      <p>Join thousands who chose clarity over complexity.</p>
+      <button class="btn btn--light" data-scroll="#quote">Get My Free Quote</button>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__top">
+      <a href="#" class="nav__brand">Harbor Shield</a>
+      <p>© 2026 Harbor Shield Insurance. Demo landing page for presentation purposes.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
